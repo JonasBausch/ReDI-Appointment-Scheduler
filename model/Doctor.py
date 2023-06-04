@@ -23,12 +23,13 @@ class Doctor:
         for qualification in self.qualifications:
             for condition in qualification.related_conditions:
                 conditions.append(condition)
+        return conditions
 
     def __repr__(self):
         return f'\nDr. {self.name} ({self.gender})\n' \
                f'Qualifications: {self.qualifications}\n' \
                f'Spoken Languages: {self.languages}\n' \
-               f'Available Time Slots: {self.available_time_slots}\n'
+               f'Available Time Slots: {self.available_time_slots}'
 
 
 class AvailableTimeSlot:
@@ -38,4 +39,4 @@ class AvailableTimeSlot:
         self.date_time_to = date_time_to
 
     def __repr__(self):
-        return f'\nDr. {self.doctor.name} is available from {self.date_time_from} to {self.date_time_to}\n'
+        return f'\nDr. {self.doctor.name} is available from {self.date_time_from} to {self.date_time_to}'

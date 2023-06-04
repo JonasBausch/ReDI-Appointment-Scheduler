@@ -2,7 +2,7 @@ from datetime import datetime
 
 from model.AppointmentRequest import AppointmentRequest
 from model.Client import Client
-from model.Doctor import Doctor, AvailableTimeSlot
+from model.Doctor import AvailableTimeSlot
 from model.Hospital import Hospital
 
 
@@ -45,10 +45,11 @@ class HospitalService:
         return available_time_slot.date_time_from <= date_time_from <= date_time_to <= available_time_slot.date_time_to
 
     @staticmethod
-    def has_common_element(a, b):
-        a_set = set(a)
-        b_set = set(b)
-        if a_set & b_set:
-            return True
-        else:
-            return False
+    def has_common_element(list1, list2):
+        result = False
+        for x in list1:
+            for y in list2:
+                if x == y:
+                    result = True
+                    return result
+        return result

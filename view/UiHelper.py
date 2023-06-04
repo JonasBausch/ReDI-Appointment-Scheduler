@@ -34,9 +34,9 @@ def parse_date(to_parse: str):
 def parse_date_time(to_parse: str):
     return datetime.strptime(to_parse, '%d-%m-%Y %H:%M')
 
+
 def parse_client(to_parse: str, clients):
     for client in clients:
         if client.name == to_parse:
             return client
     return None
-

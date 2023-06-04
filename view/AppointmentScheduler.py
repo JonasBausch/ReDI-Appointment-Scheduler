@@ -1,5 +1,3 @@
-from datetime import datetime
-
 import TestData
 from view import UiHelper
 from view.AppointmentSchedulerAction import AppointmentSchedulerAction
@@ -34,7 +32,8 @@ class AppointmentScheduler:
                 print(f'Action {selected_action} is not supported')
             selected_action = self.list_actions()
 
-    def list_actions(self):
+    @staticmethod
+    def list_actions():
         UiHelper.print_header('Available Actions')
         print(f'{[action for action in AppointmentSchedulerAction]}')
         return int(input('Please select an action by entering the corresponding number: '))

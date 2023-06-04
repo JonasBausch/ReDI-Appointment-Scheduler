@@ -1,5 +1,4 @@
 from typing import List
-
 from model.Condition import Condition
 
 
@@ -10,4 +9,4 @@ class Qualification:
 
     def __repr__(self):
         return f'\nQualification: {self.name}\n' \
-               f'Related Conditions: {self.related_conditions}\n'
+               f'Related Conditions: {self.related_conditions}'

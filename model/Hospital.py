@@ -8,5 +8,5 @@ class Hospital:
         self.departments = departments
 
     def __repr__(self):
-        return f'\nName: {self.name}\n' \
+        return f'Name: {self.name}\n' \
                f'Departments: {str(self.departments)}\n'

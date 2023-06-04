@@ -8,5 +8,5 @@ class Department:
         self.doctors = doctors
 
     def __repr__(self):
-        return f'Department Name: {self.name}\n' \
-               f'Doctors: {str(self.doctors)}'
+        return f'\nDepartment Name: {self.name}\n' \
+               f'Doctors: {str(self.doctors)}\n'

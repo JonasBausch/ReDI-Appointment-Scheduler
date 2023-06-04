@@ -1,3 +1,3 @@
-from application.AppointmentScheduler import AppointmentScheduler
+from view.AppointmentScheduler import AppointmentScheduler
 
 appointment_scheduler = AppointmentScheduler()

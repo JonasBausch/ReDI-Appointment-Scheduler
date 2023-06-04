@@ -9,5 +9,5 @@ class Qualification:
         self.related_conditions = related_conditions
 
     def __repr__(self):
-        return f'Qualification: {self.name}\n' \
-               f'Related Conditions: {self.related_conditions}'
+        return f'\nQualification: {self.name}\n' \
+               f'Related Conditions: {self.related_conditions}\n'

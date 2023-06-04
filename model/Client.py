@@ -14,7 +14,7 @@ class Client:
         self.languages = languages
 
     def __repr__(self):
-        return f'Client Name: {self.name}\n' \
+        return f'\nClient Name: {self.name}\n' \
                f'Date of Birth: {self.date_of_birth}\n' \
                f'Existing Conditions: {str(self.existing_conditions)}\n' \
-               f'Spoken Languages: {str(self.languages)}'
+               f'Spoken Languages: {str(self.languages)}\n'
